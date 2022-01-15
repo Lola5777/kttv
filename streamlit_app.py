@@ -146,7 +146,7 @@ def weather(lat,lon,city):
         st.image('https://v3.wttr.in/'+city+'.png')
 
 #==============================
-def menu():
+def main():
     # rad =st.sidebar.selectbox("Menu",["Khí tượng","Thủy văn","Mưa","Hải văn","Dự báo cho 2 ngày tới","Dự báo 6 ngày tới"])  
     rad =st.sidebar.selectbox("Menu",["Dự báo cho 2 ngày tới","Dự báo cho 6 ngày tới"])  
     # if rad == "Khí tượng":
@@ -162,13 +162,8 @@ def menu():
     elif rad == "Dự báo cho 6 ngày tới":
         weatherapp.main() 
 
-def main(d):
-    menu(d)
 
     
 
 if __name__ == "__main__":
-    # count = st_autorefresh(interval=60 * 1000, key="dataframerefresh")
-#     d = datetime.now().strftime('%m/%d/%Y')
     main()
-    # st.write(f"Count refresh :  {count} ")
