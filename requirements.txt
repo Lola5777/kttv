@@ -13,5 +13,5 @@ streamlit==1.0.0
 torch==1.9.1
 torchvision==0.10.1
 tqdm==4.62.3
-plotly
-st_autorefresh
+plotly==5.5.0
+
