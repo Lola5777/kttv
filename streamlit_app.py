@@ -146,19 +146,13 @@ def weather(lat,lon,city):
 
 #==============================
 def main():
-    # rad =st.sidebar.selectbox("Menu",["Khí tượng","Thủy văn","Mưa","Hải văn","Dự báo cho 2 ngày tới","Dự báo 6 ngày tới"])  
-    rad =st.sidebar.selectbox("Menu",["Dự báo cho 2 ngày tới","Dự báo cho 6 ngày tới"])  
-    # if rad == "Khí tượng":
-    #     # st.title(rad)
-    #     new_title = '<p style="font-family:sans-serif; color:Red; font-size: 42px;"><b>'+rad+' ngày : '+d+'</b></p>'
-    #     st.markdown(new_title, unsafe_allow_html=True)
-
-    #     get_dataKT(d)
+    rad =st.sidebar.selectbox("Menu",["Dự báo cho 2 ngày tới"])  
     if rad == "Dự báo cho 2 ngày tới":
         lat,lon,city = choice_location()
         if len(lat) > 3 or len(lon) > 3:
             weather(lat,lon,city)
-
+    else:
+        st.write("Oh No ... ")
 
     
 
