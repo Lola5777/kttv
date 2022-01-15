@@ -14,7 +14,6 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 import requests, json, io
 from pandas.io.json import json_normalize
-import weatherapp
 
 
 
@@ -159,8 +158,6 @@ def main():
         lat,lon,city = choice_location()
         if len(lat) > 3 or len(lon) > 3:
             weather(lat,lon,city)
-    elif rad == "Dự báo cho 6 ngày tới":
-        weatherapp.main() 
 
 
     
