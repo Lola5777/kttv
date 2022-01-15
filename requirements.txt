@@ -14,4 +14,5 @@ torch==1.9.1
 torchvision==0.10.1
 tqdm==4.62.3
 plotly==5.5.0
+pyowm==2.7.1
 
