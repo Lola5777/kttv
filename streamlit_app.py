@@ -8,9 +8,6 @@ import time
 from datetime import datetime
 import numpy as np
 import matplotlib.pyplot as plt
-# import seaborn as sns
-# import altair as alt #pip install altair
-from streamlit_autorefresh import st_autorefresh
 import plotly.figure_factory as ff
 import plotly.graph_objects as go
 import plotly.express as px
